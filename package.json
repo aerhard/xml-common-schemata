@@ -1,0 +1,23 @@
+{
+  "name": "xml-common-schemata",
+  "version": "0.0.1",
+  "description": "A collection of common XML schemata and catalogs for Atom",
+  "keywords": [
+    "xml",
+    "relaxng",
+    "xsd",
+    "schema",
+    "catalog"
+  ],
+  "repository": "https://github.com/aerhard/xml-common-schemata",
+  "bugs": "https://github.com/aerhard/xml-common-schemata/issues",
+  "author": "Alexander Erhard (https://github.com/aerhard/)",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-download": "0.0.1"
+  }
+}

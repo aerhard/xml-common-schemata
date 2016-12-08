@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+  <public publicId="-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN" uri="1.0/catalog.dtd"/>
+  <public publicId="-//OASIS//DTD Entity Resolution XML Catalog V1.1//EN" uri="1.1/catalog.dtd"/>
+  <public publicId="-//OASIS//DTD XML Catalogs V1.0//EN" uri="1.0/catalog.dtd"/>
+  <public publicId="-//OASIS//DTD XML Catalogs V1.1//EN" uri="1.1/catalog.dtd"/>
+  <system systemId="http://www.oasis-open.org/committees/entity/release/1.0/catalog.rng" uri="1.0/catalog.rng"/>
+  <system systemId="http://www.oasis-open.org/committees/entity/release/1.0/catalog.xsd" uri="1.0/catalog.xsd"/>
+  <system systemId="http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd" uri="1.0/catalog.dtd"/>
+  <system systemId="http://xmlcatalogs.org/schema/1.1/catalog.rnc" uri="1.1/catalog.rnc"/>
+  <system systemId="http://xmlcatalogs.org/schema/1.1/catalog.rng" uri="1.1/catalog.rng"/>
+  <system systemId="http://xmlcatalogs.org/schema/1.1/catalog.xsd" uri="1.1/catalog.xsd"/>
+  <system systemId="http://xmlcatalogs.org/schema/1.1/catalog.dtd" uri="1.1/catalog.dtd"/>
+</catalog>

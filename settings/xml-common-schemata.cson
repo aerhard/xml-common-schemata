@@ -1,0 +1,134 @@
+".text.xml":
+  "validation":
+    "rules": [
+      {
+        priority: 1
+        test:
+          publicId: "-//OASIS//DTD Entity Resolution XML Catalog V1.0//EN"
+        outcome:
+          xmlCatalog: "../data/catalog/catalog.xml"
+          schemaProps: [
+            {
+              lang: "rng"
+              path: "../data/catalog/1.0/catalog.rng"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
+          publicId: "-//OASIS//DTD XML Catalogs V1.0//EN"
+        outcome:
+          xmlCatalog: "../data/catalog/catalog.xml"
+          schemaProps: [
+            {
+              lang: "rng"
+              path: "../data/catalog/1.0/catalog.rng"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
+          rootNs: "urn:oasis:names:tc:entity:xmlns:xml:catalog"
+        outcome:
+          xmlCatalog: "../data/catalog/catalog.xml"
+          schemaProps: [
+            {
+              lang: "rnc"
+              path: "../data/catalog/1.1/catalog.rnc"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
+          pathRegex: "\\.rdf$"
+        outcome:
+          xmlCatalog: "../data/rdf/catalog.xml"
+          schemaProps: [
+            {
+              lang: "rng"
+              path: "../data/rdf/rdfxml.rng"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
+          pathRegex: "\\.rng$"
+        outcome:
+          schemaProps: [
+            {
+              lang: "rng"
+              path: "../data/relaxng/relaxng.rng"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
+          rootNs: "http://www.ascc.net/xml/schematron"
+        outcome:
+          schemaProps: [
+            {
+              lang: "xsd"
+              path: "../data/schematron/1.5/schematron1-5.xsd"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
+          rootNs: "http://purl.oclc.org/dsdl/schematron"
+        outcome:
+          schemaProps: [
+            {
+              lang: "rng"
+              path: "../data/schematron/iso/iso-schematron.rng"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
+          pathRegex: "\\.xsd$"
+        outcome:
+          xmlCatalog: "../data/xsd/catalog.xml"
+          schemaProps: [
+            {
+              lang: "xsd"
+              path: "../data/xsd/XMLSchema.xsd"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
+          pathRegex: "\\.xsl[t]?$"
+          rootAttributes:
+            version: "2.0"
+        outcome:
+          xmlCatalog: "../data/xslt/catalog.xml"
+          schemaProps: [
+            {
+              lang: "xsd"
+              path: "../data/xslt/schema-for-xslt20.xsd"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
+          pathRegex: "\\.xsl[t]?$"
+        outcome:
+          xmlCatalog: "../data/xslt/catalog.xml"
+          schemaProps: [
+            {
+              lang: "xsd"
+              path: "../data/xslt/xslt-schema.xsd"
+            }
+          ]
+      }
+
+    ]

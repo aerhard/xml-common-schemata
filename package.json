@@ -1,6 +1,6 @@
 {
   "name": "xml-common-schemata",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A collection of common XML schemata and catalogs for Atom",
   "keywords": [
     "xml",

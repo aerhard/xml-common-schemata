@@ -109,11 +109,54 @@
           pathRegex: "\\.svg$"
           rootAttributes:
             version: "1.1"
+            baseProfile: "tiny"
+        outcome:
+          schemaProps: [
+            {
+              lang: "rng"
+              path: "../data/svg/1.1/svg11-tiny.rng"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
+          pathRegex: "\\.svg$"
+          rootAttributes:
+            version: "1.1"
+            baseProfile: "basic"
+        outcome:
+          schemaProps: [
+            {
+              lang: "rng"
+              path: "../data/svg/1.1/svg11-basic.rng"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
+          pathRegex: "\\.svg$"
+          rootAttributes:
+            version: "1.1"
         outcome:
           schemaProps: [
             {
               lang: "rng"
               path: "../data/svg/1.1/svg11.rng"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
+          pathRegex: "\\.svg$"
+          baseProfile: "tiny"
+        outcome:
+          schemaProps: [
+            {
+              lang: "rng"
+              path: "../data/svg/Tiny-1.2/Tiny-1.2.rng"
             }
           ]
       }

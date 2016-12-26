@@ -11,6 +11,7 @@ references in instance documents.
 - RDF
 - Relax NG
 - Schematron 1.5 and ISO Schematron
+- SVG 1.0, SVG 1.1 Tiny, Basic, Full, SVG 1.2 Tiny, Full
 - XSD 1.0
 - XSLT 1.0, 2.0
 

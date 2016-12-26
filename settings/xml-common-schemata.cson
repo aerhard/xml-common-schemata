@@ -92,6 +92,46 @@
       {
         priority: 1
         test:
+          pathRegex: "\\.svg$"
+          rootAttributes:
+            version: "1.0"
+        outcome:
+          schemaProps: [
+            {
+              lang: "rng"
+              path: "../data/svg/1.0/svg.rng"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
+          pathRegex: "\\.svg$"
+          rootAttributes:
+            version: "1.1"
+        outcome:
+          schemaProps: [
+            {
+              lang: "rng"
+              path: "../data/svg/1.1/svg11.rng"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
+          pathRegex: "\\.svg$"
+        outcome:
+          schemaProps: [
+            {
+              lang: "rng"
+              path: "../data/svg/Full-1.2/Full-1.2.rng"
+            }
+          ]
+      }
+      {
+        priority: 1
+        test:
           pathRegex: "\\.xsd$"
         outcome:
           xmlCatalog: "../data/xsd/catalog.xml"

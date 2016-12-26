@@ -147,13 +147,13 @@
         test:
           pathRegex: "\\.xsl[t]?$"
           rootAttributes:
-            version: "2.0"
+            version: "1.0"
         outcome:
           xmlCatalog: "../data/xslt/catalog.xml"
           schemaProps: [
             {
               lang: "xsd"
-              path: "../data/xslt/schema-for-xslt20.xsd"
+              path: "../data/xslt/xslt-schema.xsd"
             }
           ]
       }
@@ -166,7 +166,7 @@
           schemaProps: [
             {
               lang: "xsd"
-              path: "../data/xslt/xslt-schema.xsd"
+              path: "../data/xslt/schema-for-xslt20.xsd"
             }
           ]
       }

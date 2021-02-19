@@ -13,7 +13,7 @@
 
   <define name="pubIdChars">
     <data type="string">
-      <param name="pattern">[a-zA-Z0-9-'()+,./:=?;!*#@$_%]*</param>
+      <param name="pattern">[a-zA-Z0-9\-'\(\)+,./:=?;!*#@$_%]*</param>
     </data>
   </define>
 
@@ -196,40 +196,22 @@
   </define>
 
   <define name="AnyOtherElement">
-    <choice>
-      <element>
-        <anyName>
-          <except>
-            <nsName ns=""/>
-            <nsName/>
-          </except>
-        </anyName>
-        <zeroOrMore>
-          <attribute>
-            <anyName/>
-          </attribute>
-        </zeroOrMore>
-        <ref name="AnyContent"/>
-      </element>
-      <text/>
-    </choice>
-  </define>
-
-  <define name="AnyContent">
-    <mixed>
+    <element>
+      <anyName>
+        <except>
+          <nsName ns=""/>
+          <nsName/>
+        </except>
+      </anyName>
       <zeroOrMore>
-        <element>
+        <attribute>
           <anyName/>
-          <zeroOrMore>
-            <attribute>
-              <anyName/>
-            </attribute>
-          </zeroOrMore>
-          <zeroOrMore>
-            <ref name="AnyContent"/>
-          </zeroOrMore>
-        </element>
+        </attribute>
       </zeroOrMore>
-    </mixed>
+      <choice>
+        <text/>
+        <ref name="AnyOtherElement"/>
+      </choice>
+    </element>
   </define>
 </grammar>

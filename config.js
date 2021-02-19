@@ -2,8 +2,10 @@ module.exports = [{
   // XML Catalogs 1.0
   // http://xmlcatalogs.org/
   sources: [
-    'http://www.oasis-open.org/committees/entity/release/1.0/catalog.rng',
-    'http://www.oasis-open.org/committees/entity/release/1.0/catalog.xsd',
+    // NB local copies of the rng and xsd schemata are adjusted to work with
+    // linter-autocomplete-jing v0.9.0
+    // 'http://www.oasis-open.org/committees/entity/release/1.0/catalog.rng',
+    // 'http://www.oasis-open.org/committees/entity/release/1.0/catalog.xsd',
     'http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd',
   ],
   targetFolder: 'catalog/1.0',

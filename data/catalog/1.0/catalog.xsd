@@ -11,7 +11,7 @@
          of the Second Edition of the XML 1.0 Recommendation. Does not include
          the whitespace characters because they're normalized by XML parsing. -->
     <xs:restriction base='xs:string'>
-      <xs:pattern value="[a-zA-Z0-9-'()+,./:=?;!*#@$_%]*"/>
+      <xs:pattern value="[a-zA-Z0-9\-'\(\)+,./:=?;!*#@$_%]*"/>
     </xs:restriction>
   </xs:simpleType>
 
